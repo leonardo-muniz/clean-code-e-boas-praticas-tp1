@@ -1,0 +1,11 @@
+public class Pagamento {
+    public void processarPagamento(double valor, String metodo) {
+        if (metodo.equals("cartao")) {
+            System.out.println("Pagamento de R$" + valor + " realizado via cartão.");
+        } else if (metodo.equals("boleto")) {
+            System.out.println("Pagamento de R$" + valor + " realizado via boleto.");
+        } else {
+            System.out.println("Erro: Método de pagamento inválido.");
+        }
+    }
+}

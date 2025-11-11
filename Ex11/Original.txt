@@ -1,0 +1,13 @@
+public class Servico {
+    public void processar(String dado) {
+        System.out.println("Processando: " + dado.toUpperCase());
+    }
+}
+public class ValidadorCPF {
+    public boolean validar(String cpf) {
+        if (cpf.length() != 11) {
+            return false;
+        }
+        return true;
+    }
+}
